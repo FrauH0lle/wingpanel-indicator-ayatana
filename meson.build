@@ -26,7 +26,7 @@ dependencies = {
 }
 
 indicator_name = 'ayatana'
-indicator_dir  = dependencies['wingpanel'].get_pkgconfig_variable('indicatorsdir')
+indicator_dir  = join_paths(get_option('prefix'), '/lib/wingpanel')
 
 # ----------------------------------------------------------------------------------------------------------------------
 # Bindings:
